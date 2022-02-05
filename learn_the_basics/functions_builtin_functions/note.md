@@ -72,4 +72,4 @@ print(my_function(5)) #25
 print(my_function(9)) #45
 ```
 
-![](python_functions.jpg)
+![](python_functions.jpg "functions")
