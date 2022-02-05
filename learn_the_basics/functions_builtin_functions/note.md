@@ -4,7 +4,7 @@ https://docs.python.org/3/library/functions.html
 
 
 # Functions
-Source: https://www.w3schools.com/python/python_functions.asp
+Source: https://www.w3schools.com/python/python_functions.asp  
 PYNative
 ## Tworzenie funkcji
 W pythonie funckje tworzymy poprzez *def*
@@ -41,7 +41,7 @@ def my_function(fname, lname):
 my_function("Emil", "Refsnes")
 ```
 
-Jeśli nie wiemy ile parametrów ma przyjąc funkcja, należy użyc * lub **
+Jeśli nie wiemy ile parametrów ma przyjąc funkcja, należy użyc * lub **  
 W przypadku * funkcja przyjmie krotke (tuple) argumentów, w przypadku ** przyjmie slownik (dictionary)
 
 ```
