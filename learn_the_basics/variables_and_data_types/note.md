@@ -25,4 +25,4 @@ print(type(x)) # <class 'int'>
 
 ```
 
-![](/datastructure.jpg)
+![](datastructure.jpg "data")
