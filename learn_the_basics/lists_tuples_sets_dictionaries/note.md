@@ -36,4 +36,4 @@ thisdict = {
 print(thisdict["brand"]) # prints Ford
 ```
 
-![](/lsdt.jfif)
+![](lsdt.jfif "listsetc")
