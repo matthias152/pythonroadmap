@@ -37,4 +37,4 @@ udemy section 21
 
 ## Try, expect, else, finally, raise
 
-![](/exceptions.png)
+![](/exceptions.png "exceptions")
