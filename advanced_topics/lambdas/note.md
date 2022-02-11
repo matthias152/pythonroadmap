@@ -1,7 +1,7 @@
 # Lambdas
 Source: https://www.w3schools.com/python/python_lambda.asp  
 https://www.w3schools.com/python/ref_func_map.asp  
-https://www.geeksforgeeks.org/python-map-function/
+https://www.geeksforgeeks.org/python-map-function/  
 udemy course section 20
 
 Lambda to mała funkcja, która przyjmuje dowolną liczbę argumentów.
