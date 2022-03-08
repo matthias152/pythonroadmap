@@ -102,4 +102,4 @@ Między {%%} możemy pisać w pythonie np ify czy pętle
 Między {{}} możemy umieszczać zmienne  
 W tym przypadku tworzymy pętle która wyświetli stworzone posty:
 
-![]("index.png" "indhtml")
+![](index.png "indhtml")
