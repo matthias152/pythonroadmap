@@ -12,6 +12,10 @@ Stawiamy serwer przez komendę:
 ```
 python manage.py runserver
 ```
+Tworzenie admina:
+```
+python manage.py createsuperuser
+```
 
 ## Apps
 Django działa poprzez aplikacje webowe, aby stworzyć nową aplikacje:
