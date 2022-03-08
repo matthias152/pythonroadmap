@@ -44,8 +44,6 @@ admin.site.register(Post)
 ![](modell.png "model1")  
 ![](modell2.png "model2")
 
-modell2 img
-
 ## Views
 doc: https://docs.djangoproject.com/en/4.0/topics/http/views/  
 W pliku *views.py* piszemy funkcje pythonowe które przyjmują request i zwracają response w postaci np. pliku html:
