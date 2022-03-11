@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        {% if request.user.is_authenticated %}
+        <p>{{ request.user }}</p>
+        <a href="{% url 'logout' %}">Log Out</a>
+        {% else %}
+        <a href="{% url 'login' %}">Log In</a>
+        {% endif %}
+
+        <hr>
+        <h1>My to do list</h1>
+        <a href="{% url 'task-create' %}">Add Task</a>
+
+        <form class="" action="" method="GET">
+            <input type="text" name="search-area" value="{{ search_input }}">
+            <input type="submit" name="" value="Search">
+
+
+        </form>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th></th>
+                <th></th>
+            </tr>
+            {% for task in tasks %}
+            <tr>
+                <td>{{ task.title }}</td>
+                <td><a href="{% url 'task' task.id %}">View</a></td>
+                <td><a href="{% url 'task-update' task.id %}">Edit</a></td>
+                <td><a href="{% url 'task-delete' task.id %}">Delete</a></td>
+            </tr>
+            {% empty %}
+                <h3>No items found</h3>
+            {% endfor %}
+        </table>
+    </body>
+</html>
