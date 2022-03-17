@@ -1,0 +1,62 @@
+{% load mathfilters %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="{% static 'crypto/styles/index.css' %}">
+        <meta charset="utf-8">
+        <title>Crypto API</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Crypto currency</th>
+                <th>Price at buy in $</th>
+                <th>Quantity in $</th>
+                <th>Quantity</th>
+                <th>Current price</th>
+                <th>Profit/loss in $</th>
+            </tr>
+            <tr>
+                <td>BTC</td>
+                <td>{{ btc_at_buy }}</td>
+                <td>1000</td>
+                <td>0,024377</td>
+                <td>{{ btc }}</td>
+                <td>{{ btc_diff }}</td>
+            </tr>
+            <tr>
+                <td>ETH</td>
+                <td>{{ eth_at_buy }}</td>
+                <td>500</td>
+                <td>0,178055</td>
+                <td>{{ eth }}</td>
+                <td>{{ eth_diff }}</td>
+            </tr>
+            <tr>
+                <td>XLM</td>
+                <td>{{ xlm_at_buy }}</td>
+                <td>300</td>
+                <td>1591,17</td>
+                <td>{{ xlm }}</td>
+                <td>{{ xlm_diff }}</td>
+            </tr>
+            <tr>
+                <td>XRP</td>
+                <td>{{ xrp_at_buy }}</td>
+                <td>450</td>
+                <td>565,7</td>
+                <td>{{ xrp }}</td>
+                <td>{{ xrp_diff }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="total"> {{ totalpl }}</td>
+            </tr>
+        </table>
+    </body>
+</html>

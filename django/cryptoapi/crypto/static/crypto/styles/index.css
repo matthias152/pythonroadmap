@@ -1,0 +1,11 @@
+body{
+    background-color: gray;
+}
+
+table, tr, th, td{
+  border: 1px solid;
+}
+
+#total {
+    background-color: #77ff00;
+}
