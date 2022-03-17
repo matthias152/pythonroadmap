@@ -23,7 +23,7 @@
                 <td>1000</td>
                 <td>0,024377</td>
                 <td>{{ btc }}</td>
-                <td>{{ btc_diff }}</td>
+                <td bgcolor="{{ btc_color }}">{{ btc_diff }}</td>
             </tr>
             <tr>
                 <td>ETH</td>
@@ -31,7 +31,7 @@
                 <td>500</td>
                 <td>0,178055</td>
                 <td>{{ eth }}</td>
-                <td>{{ eth_diff }}</td>
+                <td bgcolor="{{ eth_color }}">{{ eth_diff }}</td>
             </tr>
             <tr>
                 <td>XLM</td>
@@ -39,7 +39,7 @@
                 <td>300</td>
                 <td>1591,17</td>
                 <td>{{ xlm }}</td>
-                <td>{{ xlm_diff }}</td>
+                <td bgcolor="{{ xlm_color }}">{{ xlm_diff }}</td>
             </tr>
             <tr>
                 <td>XRP</td>
@@ -47,7 +47,7 @@
                 <td>450</td>
                 <td>565,7</td>
                 <td>{{ xrp }}</td>
-                <td>{{ xrp_diff }}</td>
+                <td bgcolor="{{ xrp_color }}">{{ xrp_diff }}</td>
             </tr>
             <tr>
                 <td></td>
@@ -55,7 +55,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td id="total"> {{ totalpl }}</td>
+                <td bgcolor="{{ total_color }}"> {{ totalpl }}</td>
             </tr>
         </table>
     </body>
