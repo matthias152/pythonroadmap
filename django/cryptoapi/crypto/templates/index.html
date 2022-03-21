@@ -58,5 +58,19 @@
                 <td bgcolor="{{ total_color }}"> {{ totalpl }}</td>
             </tr>
         </table>
+        <div class="container">
+            <h3>Currently trending coins: </h3>
+            {% for i in trending %}
+                <li>{{ i }}</li>
+            {% endfor %}
+        </div>
+        <h3>Price check:</h3>
+        <a href="https://www.coingecko.com/pl" target="_blank">List of coins</a>
+        <form class="" action="" method="post">
+            {% csrf_token %}
+            <input type="text" name="textfield" value="">
+            <button type="submit" name="button">Check</button>
+        </form>
+        <p>The price of this coin is: {{ search_coin }}$</p>
     </body>
 </html>

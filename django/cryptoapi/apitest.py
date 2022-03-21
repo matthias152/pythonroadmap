@@ -4,6 +4,6 @@ from pycoingecko import CoinGeckoAPI
 
 coingecko = CoinGeckoAPI()
 
-bitcoin = coingecko.get_price(ids = 'bitcoin', vs_currencies = 'usd')['bitcoin']['usd']
+bitcoin = coingecko.get_price(ids = 'bitcoin', vs_currencies = 'usd')
 
 print(bitcoin)

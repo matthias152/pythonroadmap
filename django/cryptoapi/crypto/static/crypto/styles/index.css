@@ -9,3 +9,12 @@ table, tr, th, td{
 /* #total {
     background-color: #77ff00;
 } */
+
+.container {
+    width: 220px;
+    height: 230px;
+    background: #C0C0C0;
+    border-color: #A9A9A9;
+    border: 2px solid;
+
+}

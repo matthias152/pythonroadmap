@@ -15,6 +15,12 @@ def color_counting(price):
 
 
 def show_crypto_prices(request):
+    TRENDING_COINS = []
+    trends = coingecko.get_search_trending()['coins']
+    for i in range(7):
+        coin = trends[i]['item']['name']
+        TRENDING_COINS.append(coin)
+
     bitcoin = coingecko.get_price(ids='bitcoin', vs_currencies='usd')['bitcoin']['usd']
     btcdiff = (bitcoin * 0.02437757945262583) - 1000
     btccolor = color_counting(btcdiff)
@@ -29,6 +35,11 @@ def show_crypto_prices(request):
     ripplecolor = color_counting(ripplediff)
     total = btcdiff + ethdiff + xlmdiff + ripplediff
     totalcolor = color_counting(total)
+
+    if request.method == 'POST':
+        coin_id = request.POST.get('textfield', None)
+        coin = coingecko.get_price(ids=coin_id, vs_currencies='usd')[str(coin_id)]['usd']
+
 
     return render(request, "index.html", {
         'btc': bitcoin,
@@ -48,6 +59,8 @@ def show_crypto_prices(request):
         'xrp_diff': round(ripplediff, 5),
         'xrp_color': ripplecolor,
         'totalpl': round(total, 5),
-        'total_color': totalcolor
+        'total_color': totalcolor,
+        'trending': TRENDING_COINS,
+        'search_coin': coin,
 
     })
