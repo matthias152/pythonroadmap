@@ -12,6 +12,7 @@ from django.shortcuts import get_object_or_404
 
 
 class ArticleViewSet(viewsets.ViewSet):
+
     def list(self, request):
         articles = Article.objects.all()
         serializer = ArticleSerializer(articles, many=True)
