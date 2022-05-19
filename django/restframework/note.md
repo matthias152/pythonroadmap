@@ -15,7 +15,7 @@ API zazwyczaj zwraca informacje w formacie JSON
 
 https://nordicapis.com/why-you-should-build-apps-with-an-api-backend-baas/
 
-#CRUD
+# CRUD
 CRUD to cztery podstawowe funkcje które zazwyczaj powinny być możliwe dla danych obiektów w bazie danych, to skrót od słów:
 Słowo   | request HTTP
 Create  |  POST
