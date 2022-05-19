@@ -17,12 +17,13 @@ https://nordicapis.com/why-you-should-build-apps-with-an-api-backend-baas/
 
 # CRUD
 CRUD to cztery podstawowe funkcje które zazwyczaj powinny być możliwe dla danych obiektów w bazie danych, to skrót od słów:
+```
 Słowo   | request HTTP
 Create  |  POST
 Read    |  GET
 Update  |  PUT
 Delete  |  DELETE
-
+```
 Operacje CRUD mają pozwolić na tworzenie, odczytywanie, aktualizowanie czy usuwanie danych informacji.
 
 Przykłady:
